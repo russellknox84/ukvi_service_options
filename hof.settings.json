@@ -1,0 +1,9 @@
+{
+  "theme": "govuk",
+  "routes": [
+    "./apps/ukvi_service_options"
+  ],
+  "session": {
+    "name": "ukvi_service_options.hof.sid"
+  }
+}
