@@ -1,0 +1,16 @@
+{{<partials-page}}
+{{$page-content}}
+{{#beforeFields}}
+{{beforeFields}}
+{{/beforeFields}}
+{{#fields}}
+{{#renderField}}{{/renderField}}
+{{/fields}}
+{{#afterFields}}
+{{afterFields}}
+{{/afterFields}}
+    <p>Based on what you have told us, we will show you the options available to you.</p>
+    <p>You will be asked around 8 questions.</p>
+    {{#input-submit}}start{{/input-submit}}
+{{/page-content}}
+{{/partials-page}}

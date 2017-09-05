@@ -1,5 +1,35 @@
 {
-  "name": {
-    "header": "Personal details"
+  "understand-my-options": {
+    "header": "Understand my options"
+  },
+  "what-visa-do-you-currently-hold": {
+    "header": "What visa do you currently hold?"
+  },
+  "what-is-the-country-of-your-nationality": {
+    "header": "What’s the country of your nationality?"
+  },
+  "what-is-your-age": {
+    "header": "What is your age?"
+  },
+  "how-long-have-you-been-in-the-UK": {
+    "header": "How long have you been in the UK?"
+  },
+  "have-you-spent-6-months-or-more-outside-uk": {
+    "header": "Have you spent 6 months or more outside the UK during this time?"
+  },
+  "do-you-have-a-family-member-in-the-uk": {
+    "header": "Do you have a partner, a parent or a child in the UK?"
+  },
+  "what-visa-do-they-hold": {
+    "header": "What visa do they hold?"
+  },
+  "what-visa-does-your-family-member-currently-hold": {
+    "header": "What visa do they currently hold?"
+  },
+  "what-do-you-want-to-do-in-the-UK": {
+    "header": "What do you want to do in the UK?"
+  },
+  "what-industry-are-you-going-to-work-in": {
+    "header": "What industry are you going to work in?"
   }
 }
