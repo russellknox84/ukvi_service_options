@@ -1,16 +1,29 @@
 FROM quay.io/ukhomeofficedigital/nodejs-base:v6.9.1
 
-RUN mkdir /public
-RUN yum clean all && \
-  yum update -y -q && \
-  yum install -y -q git && \
-  yum clean all && \
-  rpm --rebuilddb && \
-  npm install -g npm@latest --loglevel warn
+ENV USER spon
+ENV GROUP spon
+ENV NAME spon-ui
 
+ARG VERSION
+
+WORKDIR /usr/source/app
+
+RUN groupadd -r ${GROUP} && \
+    useradd -r -g ${USER} ${GROUP} -d /usr/source/app && \
+    mkdir -p /usr/source/app && \
+    chown -R ${USER}:${GROUP} /usr/source/app
+
+COPY . /usr/source/app
+
+RUN npm --loglevel warn install
 RUN npm rebuild node-sass
+COPY . /app
+RUN npm --loglevel warn run postinstall
+RUN npm run test
 
 COPY . /app
+
+USER spon
 
 CMD cd /app
 CMD npm start

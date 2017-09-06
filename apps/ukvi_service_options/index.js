@@ -4,6 +4,10 @@ module.exports = {
   name: 'ukvi_service_options',
   baseUrl: '/stay-in-the-uk',
   steps: {
+    '/': {
+      behaviours: [require('./behaviours/start')],
+      next: '/understand-my-options'
+    },
     '/understand-my-options': {
       next: '/what-visa-do-you-currently-hold'
     },
@@ -73,6 +77,7 @@ module.exports = {
     '/what-industry-are-you-going-to-work-in': {
       fields: ['what-industry-are-you-going-to-work-in'],
       next: '/visa-options',
+      backLink: '/stay-in-the-uk/what-do-you-want-to-do-in-the-UK'
     },
     '/visa-options': {
       behaviours: [require('./behaviours/visa-options')],
