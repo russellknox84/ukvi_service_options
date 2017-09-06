@@ -12,10 +12,8 @@ module.exports = {
       next: '/what-is-the-country-of-your-nationality'
     },
     '/what-is-the-country-of-your-nationality': {
-      fields: ['what-is-the-country-of-your-nationality'],
-      fork: {
-        target: '/do-you-have-grandparents-in-the-uk'
-      },
+      fields: ['what-is-the-country-of-your-nationality', ],
+      behaviours: require('./behaviours/countries'),
       next: '/what-is-your-age'
     },
     '/do-you-have-grandparents-in-the-uk': {
@@ -76,5 +74,8 @@ module.exports = {
       fields: ['what-industry-are-you-going-to-work-in'],
       next: '/visa-options',
     },
+    '/visa-options': {
+      behaviours: [require('./behaviours/visaOptions')],
+    }
   }
 };

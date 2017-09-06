@@ -8,8 +8,13 @@
 {{/fields}}
 {{#afterFields}}
 {{afterFields}}
-{{/afterFields}}
-    <p>Based on what you've told us, you may qualify the the following <b>{{count}} options</b></p>
-    {{#input-submit}}start{{/input-submit}}
+{{/afterFields}}    
+
+    <p>Based on what you have told us, you may qualify for the following <strong>{{count}} options</strong>:</p>
+    
+    {{#options}}
+        {{>option}}
+    {{/options}}
+    
 {{/page-content}}
 {{/partials-page}}

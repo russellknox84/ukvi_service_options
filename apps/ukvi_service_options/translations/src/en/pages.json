@@ -1,6 +1,6 @@
 {
   "understand-my-options": {
-    "header": "Understand my options"
+    "header": "Check my visa options"
   },
   "what-visa-do-you-currently-hold": {
     "header": "What visa do you currently hold?"
@@ -31,5 +31,11 @@
   },
   "what-industry-are-you-going-to-work-in": {
     "header": "What industry are you going to work in?"
+  },
+  "visa-options": {
+    "header": "Here are your options "
+  },
+  "do-you-have-grandparents-in-the-uk": {
+    "header": "Do you have a grandparent born in the UK?"
   }
 }
