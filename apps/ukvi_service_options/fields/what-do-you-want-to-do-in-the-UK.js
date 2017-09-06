@@ -6,32 +6,28 @@ module.exports = {
             className: 'legend-padding'
         },
         'options': {
-            'british': {
-            'label': 'become a British Citizen',
-            'value': 'british'
-            },
             'family': {
-            'label': 'live with my family',
+            'label': 'Live with my family',
             'value': 'family'
             },
             'retire': {
-            'label': 'retire',
+            'label': 'Retire',
             'value': 'retire'
             },
             'business': {
-            'label': 'start a business',
+            'label': 'Start a business',
             'value': 'business'
             },
             'study': {
-            'label': 'study',
+            'label': 'Study',
             'value': 'study'
             },
             'volunteer for a charity': {
-            'label': 'volunteer for a charity',
+            'label': 'Volunteer for a charity',
             'value': 'charity'
             },
             'work': {
-            'label': 'work',
+            'label': 'Work',
             'value': 'working'
             }
         }

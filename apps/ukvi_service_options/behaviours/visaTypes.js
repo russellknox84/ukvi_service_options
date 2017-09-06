@@ -22,9 +22,7 @@ module.exports = {
     'tier1ET': {
         visa: "Tier 1 (Exceptional Talent) leave application",
         link: "Tier 1 (Exceptional Talent) leave application link",
-        conditions: [
-            "age | less | 30"
-        ]
+        conditions: "age | less | 30"
     }, 
     "tier2G": {
         visa: "Tier 2 (general)",
@@ -37,16 +35,12 @@ module.exports = {
     "tier2MOR": {
         visa: "Tier 2 (Minister of religion)",
         link: "Tier 2 (Minister of religion) link",
-        conditions: [
-            "industry | contains | religion"
-        ]
+        conditions: "industry | contains | religion"
     },
     "tier2SP": {
         visa: "Tier 2 (sportsperson)",
         link: "Tier 2 (sportsperson) link",
-        conditions: [
-            "industry | contains | sport"
-        ]
+        conditions: "industry | contains | sport OR age | greater | 30"
     },
     "tier4": {
         visa: "Tier 4",
@@ -59,11 +53,8 @@ module.exports = {
     "tier5CS": {
         visa: "Tier 5 (creative and sporting)",
         link: "Tier 5 (creative and sporting) link",
-        conditions: [
-            "industry | contains | sport",
-            "industry | contains | creative-and-entertainment",
-            "tier5 | contains | true" 
-        ]
+        conditions: "industry | contains | sport OR industry | contains | creative-and-entertainment OR tier5 | contains | true" 
+
     }
 
 } 

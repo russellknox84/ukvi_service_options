@@ -6,13 +6,17 @@ module.exports = {
           className: 'visuallyhidden'
         },
         'options': {
-          'more-than-5': {
-            'label': 'more than 5 years',
-            'value': 'false'
-          },
           'less-than-5': {
-            'label': 'less than 5 years',
-            'value': 'true'
+            'label': 'Less than 5 years',
+            'value': 'less-5'
+          },
+          '5-10': {
+            'label': '5-10 years',
+            'value': '5-10'
+          },
+          'more-than-5': {
+            'label': 'More than 10 years',
+            'value': '10+'
           }
         }
     }

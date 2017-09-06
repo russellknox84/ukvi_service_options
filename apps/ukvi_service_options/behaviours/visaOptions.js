@@ -40,6 +40,8 @@ const fn = {
 
 const checkCondition = (condition, session) => {
     if (!condition) return true
+    
+    condition = condition.split(' OR ')
     const conditionToMeet = condition.map(condition => {
         const [type, cond, variable] = condition.split(" | ")
         const convertedType = session.get(typeConvertor[type])
@@ -70,4 +72,3 @@ module.exports = superclass => class extends superclass {
         });
       }
 };
-      

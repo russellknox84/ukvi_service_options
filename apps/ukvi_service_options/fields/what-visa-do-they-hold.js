@@ -7,19 +7,19 @@ module.exports = {
         },
         'options': {
           'british': {
-            'label': 'a British Citizrn',
+            'label': 'A British Citizen',
             'value': 'british'
           },
           'eea': {
-            'label': 'from a country within the European Economic Area',
+            'label': 'From a country within the European Economic Area',
             'value': 'eea'
           },
           'permanent': {
-            'label': 'on a permanent residence visa in the UK',
-            'value': 'permanent'
+            'label': 'On a permanent residence visa in the UK',
+            'value': 'settled'
           },
           'other': {
-            'label': 'in the UK on another visa',
+            'label': 'In the UK on another visa',
             'value': 'other'
           }
         }
