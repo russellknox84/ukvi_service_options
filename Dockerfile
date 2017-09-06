@@ -8,6 +8,8 @@ RUN yum clean all && \
   rpm --rebuilddb && \
   npm install -g npm@latest --loglevel warn
 
+RUN npm rebuild node-sass
+
 COPY . /app
 
 CMD cd /app
