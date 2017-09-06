@@ -6,7 +6,7 @@
     "test": "npm run test:lint",
     "test:lint": "eslint .",
     "build": "hof-build",
-    "postinstall": "npm run build"
+    "postinstall": "npm rebuild node-sass && npm run build"
   },
   "dependencies": {
     "hof": "^12.0.0",
