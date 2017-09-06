@@ -30,7 +30,7 @@ module.exports = {
         target: '/have-you-spent-6-months-or-more-outside-uk',
         condition: {
           field: 'how-long-have-you-been-in-the-UK',
-          value: 'true'
+          value: 'false'
         }
       }],
       next: '/do-you-have-a-family-member-in-the-uk'
