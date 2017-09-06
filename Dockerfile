@@ -1,5 +1,6 @@
 FROM quay.io/ukhomeofficedigital/nodejs-base:v6.9.1
 
+
 ENV USER spon
 ENV GROUP spon
 ENV NAME spon-ui
@@ -16,14 +17,15 @@ RUN groupadd -r ${GROUP} && \
 COPY . /usr/source/app
 
 RUN npm --loglevel warn install
+COPY . /app
 RUN npm rebuild node-sass
-COPY . /app
 RUN npm --loglevel warn run postinstall
-RUN npm run test
+RUN npm run test:ci
 
-COPY . /app
+RUN chmod a+x /usr/source/app/run.sh
+
+EXPOSE 8000
 
 USER spon
 
-CMD cd /app
-CMD npm start
+ENTRYPOINT /usr/source/app/run.sh
