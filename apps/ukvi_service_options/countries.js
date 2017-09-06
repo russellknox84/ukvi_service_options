@@ -1,3 +1,5 @@
+'use strict';
+
 const countriesDomestic = [
   'Falkland Islands',
   'Guernsey',
@@ -15,7 +17,7 @@ const Tier5 = [
   'Hong Kong',
   'Republic of Korea',
   'Taiwan'
-]
+];
 
 const countriesOtherEU = [
   'Austria',
@@ -269,7 +271,7 @@ const countriesNonEU = [
   'Zimbabwe',
 ];
 
-const allCountries = [...countriesNonEU, ...countriesOtherEU, ...Tier5, ...countriesDomestic].sort()
+const allCountries = [...countriesNonEU, ...countriesOtherEU, ...Tier5, ...countriesDomestic].sort();
 
 module.exports = {
   allCountries,
@@ -277,4 +279,4 @@ module.exports = {
   Tier5,
   countriesOtherEU,
   countriesNonEU
-}
+};

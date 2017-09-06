@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
     'what-visa-do-you-currently-hold': {
         mixin: 'select',
@@ -12,4 +14,4 @@ module.exports = {
         ],
         validate: 'required'
     }
-}
+};

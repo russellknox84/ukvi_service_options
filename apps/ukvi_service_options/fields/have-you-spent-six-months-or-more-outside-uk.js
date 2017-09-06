@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
     'have-you-spent-6-months-or-more-outside-uk': {
         validate: 'required',
@@ -16,4 +18,4 @@ module.exports = {
           }
         }
     }
-}
+};

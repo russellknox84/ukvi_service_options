@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
     'how-long-have-you-been-in-the-UK': {
         validate: 'required',
@@ -20,4 +22,4 @@ module.exports = {
           }
         }
     }
-}   
+};

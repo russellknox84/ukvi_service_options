@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
     'what-is-your-age': {
         validate: 'required',
@@ -28,4 +30,4 @@ module.exports = {
           }
         }
     }
-} 
+};

@@ -3,6 +3,7 @@ extends:
 
 rules:
   consistent-return: off
+  eol-last: off
 
 env:
   es6: true

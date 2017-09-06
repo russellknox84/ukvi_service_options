@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
     'what-industry-are-you-going-to-work-in': {
         validate: 'required',
@@ -32,4 +34,4 @@ module.exports = {
           }
         }
     }
-}
+};

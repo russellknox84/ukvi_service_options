@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
     'do-you-have-a-family-member-in-the-uk': {
         validate: 'required',
@@ -16,4 +18,4 @@ module.exports = {
           }
         }
     }
-}
+};

@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
     'what-visa-do-they-hold': {
         validate: 'required',
@@ -24,4 +26,4 @@ module.exports = {
           }
         }
     }
-}
+};
