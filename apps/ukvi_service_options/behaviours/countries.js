@@ -8,7 +8,8 @@ module.exports = superclass => class extends superclass {
         const isATier5Country = Tier5.includes(country) ? 'true' : 'false'
         req.sessionModel.set('tier-5-country', isATier5Country)
         
-        if (isATier5Country) {
+        if (isATier5Country === 'true') {
+            console.log('i sould never read this...')
             return `${req.baseUrl}/do-you-have-grandparents-in-the-uk`
         }
 
