@@ -1,5 +1,4 @@
-FROM quay.io/ukhomeofficedigital/nodejs-base:v6.9.1
-
+FROM node
 
 ENV USER spon
 ENV GROUP spon
