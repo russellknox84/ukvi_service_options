@@ -1,37 +1,20 @@
-# Javascript Node CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
-version: 2
-jobs:
-  build:
-    docker:
-      # specify the version you desire here
-      - image: circleci/node:7.10
-      
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mongo:3.4.4
+machine:
+  services:
+    - docker
 
-    working_directory: ~/repo
+dependencies:
+  override:
+    - docker build -t russellknox/ukvi_service_options .
 
-    steps:
-      - checkout
-
-      # Download and cache dependencies
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
-
-      - run: npm install
-
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
-        
-      # run tests!
-      - run: npm test
+deployment:
+  hub:
+    branch: master
+    commands:
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+      - docker push russellknox/team-health-app-response    
+  staging:
+    branch: dev
+    commands:
+      - docker login --email=$HEROKU_EMAIL --username=$HEROKU_USER --password=$(heroku auth:token) registry.heroku.com
+      - docker tag russellknox/ukvi_service_options  registry.heroku.com/stay-in-the-uk/web
+      - docker push registry.heroku.com/stay-in-the-uk/web
