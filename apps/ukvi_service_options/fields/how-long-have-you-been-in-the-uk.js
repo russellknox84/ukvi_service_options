@@ -10,15 +10,15 @@ module.exports = {
         'options': {
           'less-than-5': {
             'label': 'Less than 5 years',
-            'value': 'less-5'
+            'value': '5'
           },
           '5-10': {
             'label': '5-10 years',
-            'value': '5-10'
+            'value': '10'
           },
           'more-than-5': {
             'label': 'More than 10 years',
-            'value': '10+'
+            'value': '11'
           }
         }
     }

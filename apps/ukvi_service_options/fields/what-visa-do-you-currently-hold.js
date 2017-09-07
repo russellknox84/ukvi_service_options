@@ -1,17 +1,13 @@
 'use strict';
 
+const { listOfVisas } = require('../behaviours/visa-types')
 module.exports = {
     'what-visa-do-you-currently-hold': {
         mixin: 'select',
         legend: {
             className: 'visuallyhidden'
           },
-        options: [
-            { value: 'Tier One', label: 'Tier Onedsfsdfs' },
-            { value: 'Tier Two', label: 'Tier Two' },
-            { value: 'Tier Three', label: 'Tier Three' },
-            { value: 'Tier Four', label: 'Tier Four' }
-        ],
+        options: listOfVisas.map(visa => ({ value: visa, label: visa })),
         validate: 'required'
     }
 };

@@ -12,12 +12,12 @@ module.exports = {
             'label': 'under 16',
             'value': '16'
           },
-          '16-to-18': {
-            'label': '16 to 18',
-            'value': '18'
+          '16-to-17': {
+            'label': '16 to 17',
+            'value': '17'
           },
-          '19-to-30': {
-            'label': '19 to 30',
+          '18-to-30': {
+            'label': '18 to 30',
             'value': '30'
           },
           '31-to-65': {

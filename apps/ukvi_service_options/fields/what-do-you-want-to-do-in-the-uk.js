@@ -30,7 +30,7 @@ module.exports = {
             },
             'work': {
                 'label': 'Work',
-                'value': 'working'
+                'value': 'work'
             }
         }
     }

@@ -10,7 +10,7 @@ module.exports = {
         'options': {
           'creative-and-entertainment': {
             'label': 'creative and entertainment',
-            'value': 'creative-and-entertainment'
+            'value': 'creative'
           },
           'religion': {
             'label': 'religion',

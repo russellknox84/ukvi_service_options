@@ -1,4 +1,7 @@
 {
+  "start": {
+    "header": "Check my visa options"
+  },
   "understand-my-options": {
     "header": "Check my visa options"
   },
@@ -7,6 +10,9 @@
   },
   "what-is-the-country-of-your-nationality": {
     "header": "What’s the country of your nationality?"
+  },
+  "no-visa-required": {
+    "header": "No visa required"
   },
   "what-is-your-age": {
     "header": "What is your age?"

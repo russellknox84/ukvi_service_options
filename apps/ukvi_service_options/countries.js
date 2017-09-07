@@ -8,7 +8,7 @@ const countriesDomestic = [
   'United Kingdom'
 ];
 
-const Tier5 = [
+const tier5 = [
   'Australia',
   'Canada',
   'Japan',
@@ -19,13 +19,63 @@ const Tier5 = [
   'Taiwan'
 ];
 
+const commonWealthCountries = [
+  'Botswana',
+  'Cameroon',
+  'Ghana',
+  'Kenya',
+  'Lesotho',
+  'Malawi',
+  'Mauritius',
+  'Mozambique',
+  'Namibia',
+  'Nigeria',
+  'Rwanda',
+  'Seychelles',
+  'Sierra Leone',
+  'South Africa',
+  'Swaziland',
+  'Uganda',
+  'Tanzania',
+  'Zambia',
+  'Bangladesh',
+  'Brunei Darussalam',
+  'India',
+  'Malaysia',
+  'Pakistan',
+  'Singapore',
+  'Sri Lanka',
+  'Antigua and Barbuda',
+  'Bahamas',
+  'Barbados',
+  'Belize',
+  'Canada',
+  'Dominica',
+  'Grenada',
+  'Guyana',
+  'Jamaica',
+  'Saint Lucia',
+  'Saint Kitts and Nevis',
+  'Saint Vincent and The Grenadines',
+  'Trinidad and Tobago',
+  'Australia',
+  'Fiji',
+  'Kiribati',
+  'Nauru',
+  'New Zealand',
+  'Papua New Guinea',
+  'Samoa',
+  'Solomon Islands',
+  'Tonga',
+  'Tuvalu'
+]
+
 const countriesOtherEU = [
   'Austria',
   'Belgium',
   'Bulgaria',
   'Croatia',
   'Cyprus',
-  'Czech Republic',
   'Denmark',
   'Estonia',
   'Finland',
@@ -271,12 +321,13 @@ const countriesNonEU = [
   'Zimbabwe',
 ];
 
-const allCountries = [...countriesNonEU, ...countriesOtherEU, ...Tier5, ...countriesDomestic].sort();
+const allCountries = [...new Set([...countriesNonEU, ...commonWealthCountries, ...countriesOtherEU, ...tier5, ...countriesDomestic].sort())];
 
 module.exports = {
   allCountries,
   countriesDomestic,
-  Tier5,
+  tier5,
+  commonWealthCountries,
   countriesOtherEU,
   countriesNonEU
 };

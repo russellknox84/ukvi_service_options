@@ -2,11 +2,14 @@
 
 module.exports = {
   name: 'ukvi_service_options',
-  baseUrl: '/stay-in-the-uk',
+  baseUrl: '/',
   steps: {
     '/': {
       behaviours: [require('./behaviours/start')],
-      next: '/understand-my-options'
+      next: '/start'
+    },
+    '/start': {
+      next: '/what-visa-do-you-currently-hold'
     },
     '/understand-my-options': {
       next: '/what-visa-do-you-currently-hold'
@@ -19,6 +22,9 @@ module.exports = {
       fields: ['what-is-the-country-of-your-nationality'],
       behaviours: require('./behaviours/countries'),
       next: '/what-is-your-age'
+    },
+    '/no-visa-required': {
+      backLink: false
     },
     '/do-you-have-grandparents-in-the-uk': {
       fields: ['do-you-have-grandparents-in-the-uk'],
