@@ -11,10 +11,10 @@ const typeConvertor = {
     nationality: 'what-is-the-country-of-your-nationality',
     age: 'what-is-your-age',
     grandparents: 'do-you-have-grandparents-in-the-uk',
-    family: 'do-you-have-a-family-member-in-the-uk',
+    familyVisa: 'do-you-have-a-family-member-in-the-uk',
     outside: 'have-you-spent-6-months-or-more-outside-uk',
-    visaType: 'what-visa-do-they-hold',
-    familyVisa: 'what-visa-does-your-family-member-currently-hold',
+    family: 'what-visa-do-they-hold',
+    familyVis: 'what-visa-does-your-family-member-currently-hold',
     tier5: 'tier-5-country',
     commonwealth: 'commonwealth-coutry'
 };

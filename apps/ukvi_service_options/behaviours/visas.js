@@ -287,5 +287,245 @@ module.exports = [
             "work", "study", "charity", "business", "retire", "family"
         ],
         "condition": "residency > 5"
-      }
+      },
+      {
+        "name": "Long residence",
+        "friendly_name": "Long residence ILR",
+        "cost": "£2297 (or £993 if extension)",
+        "apply_from": "inside UK",
+        "length_of_stay": "ILR (or 2 year extension if don't meet rules)",
+        "you_can": [
+            "Work",
+            "Study"
+        ],
+        "you_cant": [
+            "",
+            "",
+            ""
+        ],
+        "worth_noting": [
+            "10 years continuous lawful residence",
+            "Not out of UK longer than 6 months in that time",
+            "Extensions available for 18-65 years old who fail theLife in the Uk/English language skill"
+        ],
+        "url": "https://www.gov.uk/long-residence",
+        "alias": "lr",
+        "intention": [
+            "work", "study", "charity", "business", "retire", "family"
+        ],
+        "condition": "residency > 10"
+      },
+      {
+        "name": "Partner (SETM)",
+        "friendly_name": "ILR as partner or parent of a settled person (can include dependents)",
+        "cost": "£2297 per person",
+        "apply_from": "inside UK",
+        "length_of_stay": "ILR",
+        "you_can": [
+            "Work",
+            "Study",
+        ],
+        "you_cant": [
+            "",
+            "",
+            ""
+        ],
+        "worth_noting": [
+            "Must have completed 24 months leave to remain in UK as a partner/parent (need sponsoring partner/child)",
+            "Financial requirement £16,800 which increases for each dependent",
+            "Life In The UK test/English language skills"
+        ],
+        "url": "https://www.gov.uk/government/publications/application-to-settle-in-the-uk-form-setm",
+        "alias": "ps",
+        "intention": [
+            "work", "study"
+        ],
+        "condition": "family = british OR family = settled, residency > 5"
+      },
+      {
+        "name": "FLR (FP)",
+        "friendly_name": "to be decided",
+        "cost": "£993 per person",
+        "apply_from": "the UK",
+        "length_of_stay": "2 or 5 years",
+        "you_can": [
+        "Work",
+        "Study",
+        "xxxx"
+    ],
+        "you_cant": [
+        "",
+        "",
+        ""
+    ],
+        "worth_noting": [
+        "Life In The UK test/English language skills",
+        "Need sponsoring partner/child",
+    ],
+        "url": "https://www.gov.uk/government/publications/application-to-extend-stay-in-the-uk-form-flrfp",
+        "alias": "flrfp",
+        "intention": [
+        "any"
+    ],
+        "condition": "family = settled OR family = british"
+    },
+    {
+        "name": "FLR (M)",
+        "friendly_name": "to be decided",
+        "cost": "£993 per person",
+        "apply_from": "the UK",
+        "length_of_stay": "2 or 5 years",
+        "you_can": [
+        "work",
+        "study"
+    ],
+        "you_cant": [
+        "",
+        "",
+        ""
+    ],
+        "worth_noting": [
+        "Need sponsoring partner/child",
+        "Life In The UK test/English language skills"
+    ],
+        "url": "https://www.gov.uk/government/publications/application-to-extend-stay-in-the-uk-as-a-partner-form-flrm",
+        "alias": "flrm",
+        "intention": [
+            "work", "study", "charity", "business", "retire", "family"
+    ],
+        "condition": "family = settled OR family = british"
+    },
+    {
+        "name": "UK ancestry",
+        "friendly_name": "UK ancestry",
+        "cost": "£496",
+        "apply_from": "outside the UK",
+        "length_of_stay": "5 years",
+        "you_can": [
+        "work"
+    ],
+        "you_cant": [
+        "access public funds"
+    ],
+        "worth_noting": [
+        "Grandparent born in UK",
+        "Commonwealth citizen",
+        "Must come to work"
+    ],
+        "url": "https://www.gov.uk/ancestry-visa",
+        "alias": "uka",
+        "intention": [
+        "work", "study"
+    ],
+        "condition": "country = commonwealth"
+    },
+    {
+        "name": "Tier 1 Entrepreneur",
+        "friendly_name": "to be decided",
+        "cost": "from £982",
+        "apply_from": "the UK",
+        "length_of_stay": "3 years and 4 months",
+        "you_can": [
+        "set up or take over the running of a business/s",
+        "work for your business",
+        "bring family members with you"
+    ],
+        "you_cant": [
+        "do any work outside your business",
+        "get public funds"
+    ],
+        "worth_noting": [
+        "You can apply to extend this visa for another 2 or 3years",
+        "You can apply for settlement after 5 years"
+    ],
+        "url": "https://www.gov.uk/tier-1-entrepreneur",
+        "alias": "t1e",
+        "intention": [
+        "business"
+    ],
+        "condition": "age > 18"
+    },
+    {
+        "name": "Tier 1 Graduate entrepreneur",
+        "friendly_name": "to be decided",
+        "cost": "£349",
+        "apply_from": "outside the UK",
+        "length_of_stay": "1 year",
+        "you_can": [
+        "bring family members with you",
+        "extend your stay in the UK using this visa",
+        "switch into this visa from some other visa categories"
+    ],
+        "you_cant": [
+        "get public funds",
+        "work as a doctor or dentist in training",
+        "settle in the UK on this visa"
+    ],
+        "worth_noting": [
+        "Must have an officially endorsed business idea",
+        "You can apply to extend this visa for one more year",
+        "This does not count towards a settlement visa"
+    ],
+        "url": "https://www.gov.uk/tier-1-graduate-entrepreneur-visa",
+        "alias": "t1ge",
+        "intention": [
+        "business"
+    ],
+        "condition": "age > 18"
+    },
+    {
+        "name": "Tier 1 Investor",
+        "friendly_name": "to be decided",
+        "cost": "£1,561",
+        "apply_from": "the UK",
+        "length_of_stay": "3 years and 4 months",
+        "you_can": [
+        "invest £2,000,000 or more",
+        "work or study",
+        "apply to settle after 2 years if you invest £10 million"
+    ],
+        "you_cant": [
+        "invest in companies mainly engaged in property",
+        "work as a professional sportsperson or sports coach",
+        "get public funds"
+    ],
+        "worth_noting": [
+        "You can apply to extend this visa for another 2 years",
+        "You will have to pay the health surcharge"
+    ],
+        "url": "https://www.gov.uk/tier-1-investor",
+        "alias": "t1i",
+        "intention": [
+        "business"
+    ],
+        "condition": "age > 18"
+    },
+    {
+        "name": "Tier 1 Exceptional talent",
+        "friendly_name": "to be decided",
+        "cost": "from £292",
+        "apply_from": "the UK",
+        "length_of_stay": "up to 5 years",
+        "you_can": [
+        "do voluntary work",
+        "travel abroad and return to the UK",
+        "bring family members with you"
+    ],
+        "you_cant": [
+        "get public funds",
+        "work as a doctor or dentist in training",
+        "work as a professional sportsperson or sports coach"
+    ],
+        "worth_noting": [
+        "You can apply to extend this visa",
+        "You can apply for settlement after 5 years",
+        "You will have to pay the health surcharge"
+    ],
+        "url": "https://www.gov.uk/tier-1-exceptional-talent",
+        "alias": "t1et",
+        "intention": [
+        "work"
+    ],
+        "condition": "age > 18"
+    },
 ]
