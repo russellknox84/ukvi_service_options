@@ -2,7 +2,7 @@
 
 module.exports = {
   name: 'ukvi_service_options',
-  baseUrl: '/',
+  baseUrl: '/prototype_one',
   steps: {
     '/': {
       behaviours: [require('./behaviours/start')],

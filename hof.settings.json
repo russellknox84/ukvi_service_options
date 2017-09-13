@@ -1,6 +1,8 @@
 {
   "theme": "govuk",
   "routes": [
+    "./apps/entry",
+    "./apps/prototype_two",
     "./apps/ukvi_service_options"
   ],
   "session": {
