@@ -22,7 +22,6 @@ const typeConvertor = {
 const calculateCondition = (string, session) => {
     const [type, cond, variable] = string.split(" ")
     const convertedType = session.get(typeConvertor[type]);
-    console.log('--->', convertedType, variable)
 	return fn[cond](convertedType, variable)
 }
 
