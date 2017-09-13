@@ -2,7 +2,7 @@
 
 module.exports = Object.assign({},
   require('./what-do-you-want-to-do-in-the-uk'),
-  require('./what-industry-are-you-going-to-work-in.js'),
+  require('./what-industry-are-you-going-to-work-in'),
   require('./what-visa-do-you-currently-hold'),
   require('./how-long-have-you-been-in-the-uk'),
   require('./what-is-the-country-of-your-nationality'),

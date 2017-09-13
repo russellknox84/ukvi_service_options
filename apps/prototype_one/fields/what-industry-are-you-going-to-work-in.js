@@ -7,6 +7,7 @@ module.exports = {
         legend: {
           className: ['visuallyhidden']
         },
+        className: "form-control",
         'options': {
           'creative-and-entertainment': {
             'label': 'creative and entertainment',

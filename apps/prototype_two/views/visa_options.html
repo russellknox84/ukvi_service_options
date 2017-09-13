@@ -1,0 +1,40 @@
+{{<partials-page}} 
+{{$page-content}} 
+{{#beforeFields}} 
+{{beforeFields}}
+{{/beforeFields}} 
+{{#afterFields}} 
+{{afterFields}} 
+{{/afterFields}}
+{{#test}}{{/test}}
+
+<div class="grid-row">
+    <div class="grid-full">
+    <div class="column-one-third">
+        {{#select}}visa{{/select}}
+        {{#select}}nationality{{/select}}
+        {{#select}}age{{/select}}
+        
+    </div>
+    <div class="column-one-third">
+        {{#select}}residency{{/select}}
+        {{#radio-group}}familyVisa{{/radio-group}}
+    </div>
+    <div class="column-one-third">
+         {{#checkbox-group}}industry{{/checkbox-group}}
+         <div class="button_margin">
+                {{#input-submit}}start{{/input-submit}}
+         </div>
+    </div>
+</div>
+</div>
+
+<div class="results">
+<h2>Results:</h2>
+<p>Based on what you have told us, you may qualify for the following <strong>{{count}} options</strong>:</p>
+{{#visaOptions}}
+    {{>option}}
+{{/visaOptions}}
+</div>
+{{/page-content}}
+{{/partials-page}}

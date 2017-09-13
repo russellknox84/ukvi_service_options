@@ -1,6 +1,6 @@
 'use strict';
 
-const { allCountries } = require('../countries');
+const { allCountries } = require('../../common/countries');
 
 module.exports = {
     'what-is-the-country-of-your-nationality': {
@@ -8,6 +8,7 @@ module.exports = {
         legend: {
             className: 'visuallyhidden'
           },
+          className: "form-control",
         options: allCountries.map(country => ({ value: country, label: country })),
     }
 };

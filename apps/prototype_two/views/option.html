@@ -1,0 +1,55 @@
+<div class="options">
+        <div class="grid-row">
+            <div class="column-two-thirds">
+                <h2 class="visa__header"><a hef="{{url}}">{{name}}</a></h2>
+            </div>
+            <div class="column-one-third">
+            </div>
+        </div>
+        <div class="grid-row">
+            <div class="column-one-third">
+                <h3 class="heading-small margin_top">Cost</h3>
+                <p>{{cost}} per person</p>
+            </div>
+            <div class="column-one-third">
+                <h3 class="heading-small margin_top">Apply from:</h3>
+                <p>{{apply_from}}</p>
+            </div>
+            <div class="column-one-third">
+                <h3 class="heading-small margin_top">How long you can stay:</h3>
+                <p>{{length_of_stay}}</p>
+            </div>
+        </div>
+    <details>
+    <summary><span class="summary">Find out more</span></summary>
+    <div class="panel panel-border-narrow">
+        <div class="grid-row">
+            <div class="column-one-third">
+                <h3 class="heading-small">You can</h3>
+                <ul class="list list-bullet">
+                    {{#you_can}}
+                        <li>{{.}}</li>
+                    {{/you_can}}
+                </ul>
+            </div>
+            <div class="column-one-third">
+                <h3 class="heading-small">You can't</h3>
+                <ul class="list list-bullet">
+                        {{#you_cant}}
+                            <li>{{.}}</li>
+                        {{/you_cant}}
+                    </ul>
+            </div>
+            <div class="column-one-third">
+                <h3 class="heading-small">Worth noting:</h3>
+                <ul class="list list-bullet">
+                        {{#worth_noting}}
+                            <li>{{.}}</li>
+                        {{/worth_noting}}
+                    </ul>
+            </div>
+        </div>
+        <a href="{{url}}">View full details of {{name}}</a>
+    </div>
+    </details>
+    </div>

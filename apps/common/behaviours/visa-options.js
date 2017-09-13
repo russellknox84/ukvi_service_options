@@ -3,23 +3,23 @@
 const { listOfVisas, listOfIntentions, mappedVisaList } = require('./visa-types');
 const { computeConditons } = require('../utils/compute-conditions')
 
-const types = listOfIntentions
-
 const mapIntentionType = (session) => {
     const intentions = session.get('what-do-you-want-to-do-in-the-UK');
     if (Array.isArray(intentions)) {
         const a = intentions.reduce((state, intention) => {
-            return [...state, ...types[intention]];
+            return [...state, ...listOfIntentions[intention]];
         }, []);
         return [...new Set(a)];
     }
-    return types[intentions];
+    return listOfIntentions[intentions];
 };
 
 const mapIntention = (intentions, session) => {
+    if (!intentions) return
     return intentions.reduce((state, intention) => {
         const visa = mappedVisaList[intention];
         const validateOptions = computeConditons(visa.condition, session);
+        console.log(validateOptions)
         if (validateOptions) {
             return [
                 ...state,
@@ -31,14 +31,12 @@ const mapIntention = (intentions, session) => {
 };
 module.exports = superclass => class extends superclass {
     locals(req) {
-        console.log(req.sessionModel)
         const sessionModel = req.sessionModel;
         const intentions = mapIntentionType(sessionModel);
         const mappedIntentions = mapIntention(intentions, sessionModel);
-        console.log(mappedIntentions)
         return Object.assign({}, super.locals(...arguments), {
-            options: mappedIntentions,
-            count: mappedIntentions.length
+            visaOptions: mappedIntentions,
+            count: mappedIntentions ? mappedIntentions.length : 0
         });
       }
 };

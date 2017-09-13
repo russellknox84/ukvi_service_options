@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  name: 'ukvi_service_options',
+  name: 'prototype_one',
   baseUrl: '/prototype_one',
   steps: {
     '/': {
@@ -20,7 +20,7 @@ module.exports = {
     },
     '/what-is-the-country-of-your-nationality': {
       fields: ['what-is-the-country-of-your-nationality'],
-      behaviours: require('./behaviours/countries'),
+      behaviours: require('../common/behaviours/countries'),
       next: '/what-is-your-age'
     },
     '/no-visa-required': {
@@ -77,7 +77,7 @@ module.exports = {
     },
     '/what-do-you-want-to-do-in-the-UK': {
       fields: ['what-do-you-want-to-do-in-the-UK'],
-      behaviours: [require('./behaviours/intentions')],
+      behaviours: [require('../common/behaviours/intentions')],
       next: '/visa-options',
     },
     '/what-industry-are-you-going-to-work-in': {
@@ -86,7 +86,7 @@ module.exports = {
       backLink: '/stay-in-the-uk/what-do-you-want-to-do-in-the-UK'
     },
     '/visa-options': {
-      behaviours: [require('./behaviours/visa-options')],
+      behaviours: [require('../common/behaviours/visa-options')],
     }
   }
 };

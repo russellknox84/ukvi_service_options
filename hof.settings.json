@@ -2,8 +2,8 @@
   "theme": "govuk",
   "routes": [
     "./apps/entry",
-    "./apps/prototype_two",
-    "./apps/ukvi_service_options"
+    "./apps/prototype_one",
+    "./apps/prototype_two"
   ],
   "session": {
     "name": "ukvi_service_options.hof.sid"
