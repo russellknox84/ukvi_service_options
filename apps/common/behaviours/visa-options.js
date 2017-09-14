@@ -1,6 +1,6 @@
 'use strict';
 
-const { listOfVisas, listOfIntentions, mappedVisaList } = require('./visa-types');
+const { listOfVisas, listOfIntentions, mappedVisaList } = require('../utils/visa-types');
 const { computeConditons } = require('../utils/compute-conditions')
 
 const mapIntentionType = (session) => {

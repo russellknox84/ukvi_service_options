@@ -1,4 +1,4 @@
-const { listOfVisas } = require('../../common/behaviours/visa-types')
+const { listOfVisas } = require('../../common/utils/visa-types')
 const { allCountries } = require('../../common/countries');
 
 module.exports = {

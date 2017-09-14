@@ -1,6 +1,6 @@
 'use strict';
 
-const { listOfVisas } = require('../../common/behaviours/visa-types')
+const { listOfVisas } = require('../../common/utils/visa-types')
 module.exports = {
     'what-visa-do-you-currently-hold': {
         mixin: 'select',
