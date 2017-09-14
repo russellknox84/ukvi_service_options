@@ -10,6 +10,5 @@ module.exports = Object.assign({},
   require('./do-you-have-grandparents-in-the-uk'),
   require('./do-you-have-a-family-member-in-the-uk'),
   require('./have-you-spent-six-months-or-more-outside-uk'),
-  require('./what-visa-do-they-hold'),
-  require('./what-visa-does-your-family-member-currently-hold')
+  require('./what-visa-do-they-hold')
 );

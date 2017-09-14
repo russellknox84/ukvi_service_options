@@ -31,6 +31,12 @@ const mapIntention = (intentions, session) => {
 };
 module.exports = superclass => class extends superclass {
     locals(req) {
+        if (req.url === '/visa_list') {
+            return Object.assign({}, super.locals(...arguments), {
+                visaOptions: Object.keys(mappedVisaList).map(key => mappedVisaList[key]),
+                count: listOfVisas ? listOfVisas.length : 0
+            });
+        }
         const sessionModel = req.sessionModel;
         const intentions = mapIntentionType(sessionModel);
         const mappedIntentions = mapIntention(intentions, sessionModel);

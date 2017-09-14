@@ -6,35 +6,39 @@
 {{#afterFields}} 
 {{afterFields}} 
 {{/afterFields}}
-{{#test}}{{/test}}
-
-<div class="grid-row">
+<div class="filter_bar">
+        <div class="filter_bar__text">Filter your list of visas</div>
+        <div class="filter_bar__filterbutton">{{#input-submit}}update{{/input-submit}}</div>
+</div>
     <div class="grid-full">
-    <div class="column-one-third">
-        {{#select}}visa{{/select}}
-        {{#select}}nationality{{/select}}
-        {{#select}}age{{/select}}
-        
-    </div>
-    <div class="column-one-third">
-        {{#select}}residency{{/select}}
-        {{#radio-group}}familyVisa{{/radio-group}}
-    </div>
-    <div class="column-one-third">
-         {{#checkbox-group}}industry{{/checkbox-group}}
-         <div class="button_margin">
-                {{#input-submit}}start{{/input-submit}}
-         </div>
-    </div>
-</div>
+        <div class="what_want_to_do">
+            <div class="what_want_to_do__header">What do you want to do?</div>
+            {{#checkbox-group}}intentions{{/checkbox-group}}
+            <div class="industry_choices">
+                {{#radio-group}}industry{{/radio-group}}
+            </div>
+        </div>
+        <div class="what_want_to_do">
+            <div class="what_want_to_do__header">About you</div>
+            <div class="column-half">
+                    {{#select}}visa{{/select}}
+                    {{#select}}nationality{{/select}}
+                    <div class="grandparent_in_uk">
+                        {{#radio-group}}grandparent{{/radio-group}}
+                    </div>
+                    {{#select}}age{{/select}}
+                    
+             </div>
+            <div class="column-half">
+                {{#select}}residency{{/select}}
+                {{#radio-group}}family{{/radio-group}}
+                <div class="family_member_in_uk">
+                    {{#radio-group}}familyVisa{{/radio-group}}
+                </div>
+            </div>
+        </div>
 </div>
 
-<div class="results">
-<h2>Results:</h2>
-<p>Based on what you have told us, you may qualify for the following <strong>{{count}} options</strong>:</p>
-{{#visaOptions}}
-    {{>option}}
-{{/visaOptions}}
-</div>
+
 {{/page-content}}
 {{/partials-page}}

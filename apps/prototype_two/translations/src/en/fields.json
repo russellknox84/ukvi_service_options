@@ -1,2 +1,17 @@
 {
+    "intentions": {
+        "legend": "Select all that apply"
+    },
+    "industry": {
+        "legend": "Please choose an industry"
+    },
+    "family": {
+        "legend": "Family member in the UK?"
+    },
+    "familyVisa": {
+        "legend": "What visa do they hold?"
+    },
+    "grandparent": {
+        "legend": "Do you have a grandparent born in the UK?"
+    }
 }

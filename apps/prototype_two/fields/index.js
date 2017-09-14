@@ -72,10 +72,30 @@ module.exports = {
             }
           }
     },
-    familyVisa: {
+    grandparent: {
+      type: 'radio',
+      label: "Grandparent born in UK",
+      mixin: 'radio-group',
+      className: 'inline',
+      legend: {
+        className: 'legend-padding'
+      },
+      'options': {
+          'yes': {
+            'label': 'yes',
+            'value': 'true'
+          },
+          'no': {
+            'label': 'no',
+            'value': 'false'
+          }
+        }
+    },
+    family: {
         type: 'radio',
         label: "Parent, partner or child in the UK",
         mixin: 'radio-group',
+        className: 'inline',
         legend: {
           className: 'legend-padding'
         },
@@ -90,13 +110,74 @@ module.exports = {
             }
           }
     },
+    familyVisa: {
+      type: 'radio',
+      label: "Parent, partner or child in the UK",
+      mixin: 'radio-group',
+      legend: {
+        className: 'legend-padding'
+      },
+      'options': {
+        'british': {
+          'label': 'A British Citizen',
+          'value': 'british'
+        },
+        'eea': {
+          'label': 'From a country within the European Economic Area',
+          'value': 'eea'
+        },
+        'permanent': {
+          'label': 'On a permanent residence visa in the UK',
+          'value': 'settled'
+        },
+        'other': {
+          'label': 'In the UK on another visa',
+          'value': 'other'
+        }
+      }
+    },
     industry: {
+      type: 'radio',
+      label: "Parent, partner or child in the UK",
+      mixin: 'radio-group',
+      className: 'inline',
+      legend: {
+        className: 'legend-padding'
+      },
+      'options': {
+        'religion': {
+          'label': 'religion',
+          'value': 'religion'
+        },
+        'science': {
+          'label': 'science',
+          'value': 'science'
+        },
+        'sport': {
+          'label': 'sport',
+          'value': 'sport'
+        },
+        'technology': {
+          'label': 'technology',
+          'value': 'technology'
+        },
+        'creative-and-entertainment': {
+          'label': 'creative and entertainment',
+          'value': 'creative'
+        },
+        'none': {
+          'label': 'none of the above',
+          'value': 'none'
+        },
+      }
+    },
+    intentions: {
         validate: 'required',
         type: 'checkbox',
-        legend: "What do you want to do",
         legend: {
           className: 'legend-padding'
         },
+        className: 'inline',
         'options': {
             'family': {
                 'label': 'Live with my family',

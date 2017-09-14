@@ -10,14 +10,13 @@
 {{afterFields}}
 {{/afterFields}}    
 
-
-<div class="grid-row">
-    <div class="column-two-thirds">
-        <p>Prototype Two Start Page</p>
-    </div>
+<div class="header_bar">
+    <div class="header_bar__text">Displaying {{count}} of 20 visas</div>
+    <div class="header_bar__filterbutton">{{#input-submit}}filter{{/input-submit}}</div>
 </div>
-
-{{#input-submit}}start{{/input-submit}}
+{{#visaOptions}}
+{{>option}}
+{{/visaOptions}}
 
 {{/page-content}}
 {{/partials-page}}
